@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hanekawa Parser</title>
+    <meta name="description" content="Hanekawa Parser">
+    <!--<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/main.css')}}">-->
+
+</head>
+
+<body align="center">
+    <form action='/' method="post">
+        <input type="text" id="1" name="parse_url">
+        <input type="submit">
+    </form>
+    <table>
+        <tr>
+            {{ id }} {{ context }}
+        </tr>
+    </table>
+    GET RESULTS
+    <form action="/get_status" method="get">
+        <input type="text" id="2" name="pid">
+        <input type="submit">
+    </form>
+</body>
+</html>
