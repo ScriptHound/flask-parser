@@ -36,4 +36,4 @@ def parse_html(raw_html: str) -> dict:
 
 
 if __name__ == '__main__':
-    print(get_parsed_data(''))
+    print(get_parsed_data('https://akihabarashop.ru/'))

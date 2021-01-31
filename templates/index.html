@@ -20,9 +20,10 @@
         </tr>
     </table>
     GET RESULTS
-    <form action="/get_status" method="get">
-        <input type="text" id="2" name="pid">
+    <form action="/get_status" method="post">
+        <input type="text" id="1" name="pid">
         <input type="submit">
     </form>
+    {{ task_result }}
 </body>
 </html>
