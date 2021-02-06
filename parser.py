@@ -33,7 +33,3 @@ def parse_html(raw_html: str) -> dict:
     prices_list = search_for_class(bs, r'price')
 
     return dict(zip(prices_list, products))
-
-
-if __name__ == '__main__':
-    print(get_parsed_data('https://akihabarashop.ru/'))
